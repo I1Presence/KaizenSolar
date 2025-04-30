@@ -1,0 +1,89 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+.header img {
+    max-width: 100px;
+}
+.nav {
+    margin-top: 10px;
+}
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.hero img {
+    width: 100%;
+    display: block;
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.hero-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.welcome {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+.welcome p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+.benefits {
+    display: flex;
+    flex-direction: column; /* Stack heading and content */
+    align-items: center; /* Center horizontally */
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+.benefits h2 { /* Style the heading */
+    width: 100%; /* Make it full width */
+    margin-bottom: 20px; /* Add some space below */
+}
+.benefits-content { /* Style the container for the benefits */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%; /* Make it full width */
+}
+.benefit {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.benefit h3 {
+    margin-bottom: 10px;
+}
+.benefit p {
+    line-height: 1.6;
+}
+.Logo {
+    width: 150px;
+    height: auto;
+}
