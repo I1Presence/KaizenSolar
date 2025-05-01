@@ -3,81 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kaizen Solar</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        header {
-            text-align: center;
-            background-color: #ececec;
-            padding: 15px 0;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .hero {
-            position: center;
-        }
-        .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-        .welcome {
-            text-align: center;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            color: rgb(0, 0, 0); /* Black text for links */
-            margin: 0 15px; /* Spacing between links */
-            text-decoration: none; /* No underline */
-            font-weight: bold; /* Bold text */
-        }
-        nav a:hover {
-            text-decoration: underline; /* Underline on hover */
-        }
-        .benefits {
-            margin: 20px;
-        }
-        .benefits-content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .benefit {
-            width: 30%; /* Adjust width as needed */
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid #ccc; /* Border for benefits */
-            border-radius: 5px; /* Rounded corners */
-        }
-        .video-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-    </style>
 </head>
 <body>
-<header>
-    <a href="index.html"><img src="logo1.png" alt="Kaizen Solar Logo" class="Logo"></a> <!-- Added logo with link -->
-    <nav>
-        <a href="aboutus.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="mission.html">Contact</a>
-    </nav>
-</header>
+    <header class="header">
+        <button class="logo-button" onclick="window.location.href='index.html'">
+            <img src="media/logo1.png" alt="Kaizen Solar Logo" class="logo-actual">
+        </button>
+        <nav class="nav">
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="about">
-    <h2>About us</h2>
-    <p>Welcome to Kaizen Solar! We are dedicated to providing sustainable solar energy solutions to help you reduce your carbon footprint and save on energy costs. Our mission is to make solar energy accessible and affordable for everyone.</p>
-</section>
+    <main>
+        <section class="about-us">
+            <div class="container">
+                <h1 style="text-align: center;font-size:250% ;">Kaizen Solar - Powering Gujarat with Sustainable Energy</h1>
+                <section class="our-story">
+                    <p style="font-size: 135%;">Founded in [Year], Kaizen Solar was born out of a passion for renewable energy and a vision to help Gujarat embrace a cleaner future. Our founder, KetanKumar Shah, witnessed the growing energy demands in Gujarat and recognized the immense potential of solar power to meet those needs sustainably. We began as a small team of dedicated professionals, committed to delivering exceptional service and high-quality installations. Over the years, we've grown into a trusted name in Gujarat's solar industry, empowering countless homes and businesses to harness the power of the sun.</p>
+                </section>
 
-<footer>
-    <p>&copy; KAIZEN UNIVERSAL PRIVATE LIMITED.</p>
-</footer>
+                <section class="moa">
+                    <h2 style="text-align: center;font-size:250% ;">Our Foundation: Built on a Strong MOA</h2>
+                    <p style="font-size: 135%;">Kaizen Solar operates on a strong foundation, as outlined in our Memorandum of Association. This legal framework empowers us to provide a wide range of services and solutions in the renewable energy sector, ensuring that we meet the evolving needs of Gujarat's energy landscape. Our core objectives, as defined by our MOA, include:</p>
+                    <ul style="font-size: 100%;">
+                        <li>
+                            <strong>Harnessing Solar Energy:</strong> To carry anywhere, setting up of power plants, conventional/renewable energy with solar energy, including Energy Storage Systems to generate power. This commitment to solar energy is at the heart of our business, driving us to deliver cutting-edge solar solutions to homes, businesses, and industries across Gujarat.
+                        </li>
+                        <li>
+                            <strong>Providing Comprehensive Solutions:</strong> "to produce, manufacture, buy, import, sale, treat, exchange, renovate, install, deal in all types of machinery, equipment, material, article, & stores & to deal with all private & public bodies This demonstrates our capability to manage all aspects of solar projects, from procurement and installation to working with various stakeholders.
+                        </li>
+                        <li>
+                            <strong>Delivering Expertise and Guidance:</strong> to provide consultancy, engineering, and technical services related to solar energy projects. This showcases our expertise in offering comprehensive solutions, from design to implementation.
+                        </li>
+                    </ul>
+                    <p>These objectives, enshrined in our MOA, enable us to deliver comprehensive and reliable solar solutions to our clients, ensuring that we adhere to the highest standards of quality and professionalism.</p>
+                </section>
+                <section>
+                <h2 class="powering-future">Powering a Brighter Future for Gujarat</h2>
+                    <p style="font-size: 135%;">At Kaizen Solar, we are committed to providing the highest quality solar solutions and exceptional customer service. We understand that investing in solar is a significant decision, and we are here to guide you every step of the way. From the initial consultation to the final installation and beyond, we are dedicated to ensuring your complete satisfaction.
+                    We believe that solar energy is the key to a sustainable future for Gujarat, and we are proud to be a part of this transformation. By choosing Kaizen Solar, you are not only investing in a cleaner and more affordable energy solution but also contributing to a brighter tomorrow for our state.</p>
+                </section>
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Reach out to us for inquiries or quotes.</p>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span>Name</span>
+                            <span>KetanKumar Shah</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span>Phone</span>
+                            <span>+91 9825119674</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span>Email</span>
+                            <span>kgc_india@hotmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>&copy; KAIZEN UNIVERSAL PRIVATE LIMITED.</p>
+    </footer>
 </body>
 </html>

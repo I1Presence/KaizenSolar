@@ -1,109 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaizen Solar</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        header {
-            text-align: center;
-            background-color: #ececec;
-            padding: 15px 0;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .hero {
-            position: center;
-        }
-        .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-        .welcome {
-            text-align: center;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            color: rgb(0, 0, 0); /* Black text for links */
-            margin: 0 15px; /* Spacing between links */
-            text-decoration: none; /* No underline */
-            font-weight: bold; /* Bold text */
-        }
-        nav a:hover {
-            text-decoration: underline; /* Underline on hover */
-        }
-        .benefits {
-            margin: 20px;
-        }
-        .benefits-content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .benefit {
-            width: 30%; /* Adjust width as needed */
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid #ccc; /* Border for benefits */
-            border-radius: 5px; /* Rounded corners */
-        }
-        .video-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaizen Solar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="logo1.png" alt="Kaizen Solar Logo" class="Logo"></a>
-        <nav>
-            <a href="aboutus.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="mission.html">Our Mission</a>
-        </nav>
-    </header>
-    <br>
-    <div class="hero">
-        <img src="solarpanel.png" alt="Solar Panels" style="border-radius: 15px; width: 97%; margin: 0 auto; display: block;">
+  <header class="header">
+    <button class="logo-button" onclick="window.location.href='index.html'">
+      <img src="media/logo1.png" alt="Kaizen Solar Logo" class="logo-actual">
+    </button>
+    <nav class="nav">
+      <ul>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero" style="position: relative;">
+    <img src="media/solarpanels.jpeg" alt="Solar Panels" style="border-radius: 15px; width: 75%; margin: 0 auto; display: block;">
+    <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 75%; height: 100%; background-color: rgba(0, 0, 0, 0.5); border-radius: 15px; pointer-events: none;"></div>
+    <div style="position: absolute; top: 26.5%; left: 13%; color: white; padding: 5.33%; font-size: 312.5%; z-index: 1;">
+      With solar, we can power our future, protect our planet,
+      <br>
+      and create a brighter tomorrow.
     </div>
-    <div class="welcome">
-        <h2>Welcome to Kaizen Solar</h2>
-        <p>At Kaizen Solar, we are passionate about the fact that it brings clean and affordable solar energy to our homes and businesses in Gujarat. We believe that we enable our community with sustainable solutions that benefit both your wallet and the environment. We strive to provide high-quality installation and customer service.</p>
+  </div>
+  <div class="welcome">
+    <h2>Welcome to Kaizen Solar</h2>
+    <p>At Kaizen Solar, we are passionate about the fact that it brings clean and affordable solar energy to our homes and
+      businesses in Gujarat. We believe that we enable our community with sustainable solutions that benefit both your
+      wallet and the environment. We strive to provide high-quality installation and customer service.</p>
+  </div>
+  <div class="benefits">
+    <h2>Why Use Solar Energy</h2>
+    <div class="benefits-content">
+      <div class="benefit">
+        <h3>Economic Benefits:</h3>
+        <p>Solar panels generate your own electricity, reducing or eliminating your reliance on the grid and lowering
+          your monthly expenses.</p>
+      </div>
+      <div class="benefit">
+        <h3>Environmental Benefits:</h3>
+        <p>Solar energy is clean and renewable, producing no greenhouse gas emissions that contribute to climate
+          change.</p>
+      </div>
+      <div class="benefit">
+        <h3>Practical and Personal Benefits:</h3>
+        <p>Generate your own power and reduce your reliance on the grid, providing greater energy security. Solar panels
+          have a long lifespan, often lasting 25 years or more.</p>
+      </div>
     </div>
-    <div class="benefits">
-        <h2>Why Use Solar Energy</h2>
-        <div class="benefits-content">
-            <div class="benefit">
-                <h3>Economic Benefits:</h3>
-                <p>Solar panels generate your own electricity, reducing or eliminating your reliance on the grid and lowering your monthly expenses.</p>
-            </div>
-            <div class="benefit">
-                <h3>Environmental Benefits:</h3>
-                <p>Solar energy is clean and renewable, producing no greenhouse gas emissions that contribute to climate change.</p>
-            </div>
-            <div class="benefit">
-                <h3>Practical and Personal Benefits:</h3>
-                <p>Generate your own power and reduce your reliance on the grid, providing greater energy security. Solar panels have a long lifespan, often lasting 25 years or more.</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="video-container" style="text-align: center; margin: 20px 0;">
-        <h2>Watch Our Video</h2>
-        <video controls style="width: 110%; max-width: 700px; height: auto;">
-            <source src="solarvideo - Made with Clipchamp (1).mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <footer>
-        <p>&copy; KAIZEN UNIVERSAL PRIVATE LIMITED.</p>
-    </footer>
+  </div>
+
+  <div class="video-container" style="text-align: center; margin: 20px 0;">
+    <h2>Watch Our Video</h2>
+    <video controls style="width: 110%; max-width: 700px; height: auto;">
+      <source src="media/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <footer>
+    <p>&copy; KAIZEN UNIVERSAL PRIVATE LIMITED.</p>
+  </footer>
 </body>
+</html>

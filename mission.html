@@ -4,77 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Kaizen Solar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <style>
-        header {
-            text-align: center;
-            background-color: #ececec;
-            padding: 15px 0;
-        }
-        img {
-            max-width: 100%;
+        .splide__slide img {
+            width: 75%;
             height: auto;
         }
-        .hero {
-            position: center;
+        .splide__slide {
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
-        .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
+        .splide__pagination li button {
+            background: #ccc;
+            opacity: 0.7;
         }
-        .welcome {
-            text-align: center;
+        .splide__pagination li.is-active button{
+          background: #000;
+          opacity: 1;
         }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            color: rgb(0, 0, 0); /* Black text for links */
-            margin: 0 15px; /* Spacing between links */
-            text-decoration: none; /* No underline */
-            font-weight: bold; /* Bold text */
-        }
-        nav a:hover {
-            text-decoration: underline; /* Underline on hover */
-        }
-        .benefits {
+        .our-mission {
             margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ffffff;
         }
-        .benefits-content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+        p{
+          color: #555;
         }
-        .benefit {
-            width: 30%; /* Adjust width as needed */
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid #ccc; /* Border for benefits */
-            border-radius: 5px; /* Rounded corners */
+        ul{
+          list-style-type: disc;
+          padding-left: 20px;
         }
-        .video-container {
-            text-align: center;
-            margin: 20px 0;
+        li{
+          margin-bottom: 8px;
+        }
+        .strive {
+            font-size: 135%;
         }
     </style>
 </head>
-<body>
-<header>
-    <a href="index.html"><img src="logo1.png" alt="Kaizen Solar Logo" class="Logo"></a> <!-- Added logo with link -->
-    <nav>
-        <a href="aboutus.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="mission.html">Contact</a>
-    </nav>
-</header>
+<body>    
+    <header class="header">
+        <button class="logo-button" onclick="window.location.href='index.html'">
+            <img src="media/logo1.png" alt="Kaizen Solar Logo" class="logo-actual">
+        </button>
+        <nav class="nav">
+          <ul>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="mission.html">Our Mission</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div id="image-slider" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="media/Screenshot 2025-04-30 172313.png" alt="Slide 1">
+                </li>
+                <li class="splide__slide">
+                    <img src="media/Screenshot 2025-04-30 172333.png" alt="Slide 2">
+                </li>
+                <li class="splide__slide">
+                    <img src="media/Screenshot 2025-04-30 172422.png" alt="Slide 3">
+                </li>
+            </ul>
+        </div>
+         <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev">Prev</button>
+              <button class="splide__arrow splide__arrow--next">Next</button>
+         </div>
+         <div class="splide__pagination"></div>
+    </div>
 
-<section id="mission">
-    <h2>Our Mission</h2>
-    <p>Welcome to Kaizen Solar! We are dedicated to providing sustainable solar energy solutions to help you reduce your carbon footprint and save on energy costs. Our mission is to make solar energy accessible and affordable for everyone.</p>
-</section>
-
-<footer>
-    <p>&copy; KAIZEN UNIVERSAL PRIVATE LIMITED.</p>
-</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#image-slider', {
+                type   : 'loop',
+                autoplay: true,
+                interval: 5000,
+            } ).mount();
+        } );
+    </script>
+    <div class='our-mission'>
+        <strong>
+       <p style="font-size: 150%; text-align: center;">Our Mission</p>
+        </strong>
+        <p style="font-size: 135%;">At Kaizen Solar, our mission is to drive the widespread adoption of sustainable energy solutions. We are committed to providing exceptional solar panel installation services that empower our customers and contribute to a greener future.</p>
+        <p class="strive";>We strive to: </p>
+        <ul style="font-size: 100%;">
+            <li>Accelerate the adoption of sustainable energy by delivering reliable, high-quality solar panel installation services.</li>
+            <li>Empower homes and businesses with clean, affordable solar energy solutions through expert installation and service.</li>
+            <li>Be the leading provider of solar panel installation services, driving the transition to a greener future.</li>
+            <li>Provide exceptional solar panel installation services, ensuring energy independence and environmental sustainability for our customers.</li>
+        </ul>
+        <p>By focusing on these core principles, we aim to make solar energy accessible, affordable, and reliable for everyone. We believe that solar power is not just a smart investment, but a responsibility we share in creating a sustainable world for generations to come.</p>
+    </div>
+    <footer>
+        <p style="color: #ffffff;">&copy; KAIZEN UNIVERSAL PRIVATE LIMITED.</p>
+    </footer>
+</body>
+</html>
